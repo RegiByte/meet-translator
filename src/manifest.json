@@ -1,0 +1,34 @@
+{
+  "name": "Google Meet translator",
+  "version": "1.0",
+  "description": "This allows you to translate google meet captions to any language during the meeting",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeContent",
+    "https://api.au-syd.language-translator.watson.cloud.ibm.com/instances/ace5a640-bdf6-4aa3-a50b-6a47b4b79d8d/*"
+  ],
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "background.bundle.js"
+    ],
+    "persist": false
+  },
+  "options_page": "options.html",
+  "page_action": {
+    "default_icon": {
+      "16": "get_started16.png",
+      "32": "get_started32.png",
+      "48": "get_started48.png",
+      "128": "get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "get_started16.png",
+    "32": "get_started32.png",
+    "48": "get_started48.png",
+    "128": "get_started128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
